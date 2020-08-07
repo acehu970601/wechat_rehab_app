@@ -1,0 +1,88 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #666666;
+}
+
+.usermotto {
+  margin-top: 0px;
+  justify-content: space-between;
+}
+
+.img1{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.img2{
+  width: 50rpx;
+  height:50rpx;
+}
+
+.usermotto text{
+  color: black;
+  display: flex;
+  /* font-family: FangSong; */
+  font-style: normal;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.userbegin{
+  margin-top:6px;
+  margin-bottom:5px;
+   font-family: FangSong;
+  color: black;
+  font-weight: bold;
+  font-size: 35rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn1{
+  width: 100%;
+  height: 280rpx;
+  line-height: 200rpx;
+  margin-top: 0px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.txt{
+  color: black;
+  font-size: 20rpx;
+}
+.workDayView{
+  color: black;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bigt{
+  color: #2fa6f5;
+  font-size: 60rpx;
+  font-weight: bold;
+}

@@ -1,0 +1,40 @@
+<!--<view class="top">
+  <view class="topButton {{viewIdx == 0 ? 'active':''}}" bindtap='changeStyle' data-index="0">默认   </view>
+  <view class="topButton {{viewIdx == 1 ? 'active':''}}" bindtap='changeStyle' data-index="1">自定义</view>
+</view>-->
+
+<view wx:if="{{viewIdx == 0}}">
+  <scroll-view scroll-y='{{true}}' class='totalScorll' style="height:{{scrollHeight}}rpx;">
+    <image class='titlePic' mode='widthFix' src='{{titlePic}}'></image>
+    <view class='generalList'>
+      <scroll-view scroll-x='{{true}}'>
+        <view wx:for='{{generalList}}' wx:for-index="idx" class='item'>
+          <image class='dailyImage' src='{{item.src}}'></image>
+          <text class='dailyText'>{{item.text}}</text>
+        </view>
+      </scroll-view>
+    </view>
+
+  <view class='txt1'>本计划由医生以及患者共同总结出来的</view>
+  <view class='txt2'>
+  <text wx:for='{{infoText}}'>
+    <text class='txt2'>{{item}}</text>
+   </text>
+   </view>
+  <view class='txt1'>组成</view>
+  <view class='a'>
+    <text class='a1'> 建议练习周期</text>
+    <text class='a2'>根据个人情况每天进行练习，可重复整个计划的练习</text>
+    <text class='a1'>适合人群</text>
+    <text wx:for='{{userText}}'>
+      <text class='a2'>{{item}}</text>
+    </text>
+    <text class='a1'>*注意事项*</text>
+    <text wx:for='{{attentionText}}'>
+      <text class='a2'>{{item}}</text>
+    </text>
+  </view>
+  </scroll-view>
+  <button class="buttonk" bindtap='jumpPageDefault'>开始！</button>
+  <button class="buttond" bindtap='jumpPageCustom'>自定义课程</button>
+</view>

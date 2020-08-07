@@ -1,0 +1,9 @@
+<!--extra_card.wxml-->
+<view class='container'>
+<text class='txtbig'>恭喜</text>
+<text class='txt'>获得一张免费的体验卡!</text>
+</view>
+
+<image src='../image/vip_card.png' class='img' mode="widthFix"></image>
+
+<button class="buttonk" bindtap='jumpPage'>开始训练</button>

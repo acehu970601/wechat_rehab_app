@@ -1,0 +1,120 @@
+/* intro.wxss */
+
+.image{
+  width: 750rpx;
+  height: 750rpx;
+}
+
+
+.buttonk{
+  position:fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color:#e04f5f;
+  color: white;
+  border-radius: 0;
+}
+
+.buttonk::after{
+  border-radius:0;
+}
+
+.buttond{
+  position:fixed;
+  bottom: 0;
+  right:0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-radius:0;
+} 
+
+.buttond::after{
+  border-radius:0;
+}
+
+/*设置包裹*/
+
+.out {
+  background: #ffffff;
+  padding: 0px 5px;
+  width: 100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 10rpx;
+}
+
+/*设置行内块*/
+
+.out  .item {
+  width: 100px;
+  height: 80px;
+  border: none;
+  background: white;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.img{
+  width: 100px;
+  height: 80px;
+}
+
+.item_txt{
+  display:block;
+  width:100%;
+  font-size:24rpx;
+}
+
+.txt1{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+}
+
+.txt2{
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.a{
+  background: gray;
+  height: 100%;
+  /* align-items: center; */
+  box-sizing: border-box;
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-top: 20rpx;
+  padding-left: 120rpx;
+  padding-right: 120rpx;
+  padding-bottom: 20rpx;
+  margin-bottom: 100rpx;
+}
+.a1{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20rpx;
+  text-decoration: underline;
+ }
+.a2{
+  font-size: 15px;
+  font-weight: normal;
+ }

@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <text class='workDayView'>你好，今天是锻炼的第 <text class='bigt'>{{workDay}}</text> 天</text>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="userbegin">
+    <text class="userbegin">{{begin}}</text>
+  </view>
+ 
+  <view class="usermotto">
+    <text wx:if="{{!hasUserInfo && canIUse}}" class="user-motto">{{motto}}</text>
+    <button class="btn1" wx:else  bindtap="jumpPage"><image class="img1" src='../image/video.png'></image>   <text class="user-motto">跟 着 视 频 练</text><image class="img2" src='../image/arrows.png'></image></button>
+  </view>
+  <view class="usermotto">
+    <text wx:if="{{!hasUserInfo && canIUse}}" class="user-motto">{{motto}}</text>
+    <button class="btn1" wx:else  bindtap="jumpPage2"><image class="img1" src='../image/Surgeon.png'></image><text class="user-motto">线 上 咨 询</text><image class="img2" src='../image/arrows.png'></image></button>
+  </view>
+
+</view>

@@ -1,0 +1,104 @@
+/* pages/preparation/preparation.wxss */
+page {
+  height: 100%;
+}
+.btn {
+  align-items: center;
+  width: 98%;
+  height: 8%;
+  margin-top: 8px;
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px double #2fa6f5;
+}
+.btn::after{
+  border: 1px dotted #2fa6f5;
+}
+
+.btn1 {
+  align-items: center;
+  width: 98%;
+  height: 6%;
+  margin-top: 8px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid #2fa6f5;
+}
+.videoCss{
+  direction: horizontal;
+  width: 100%;
+  height: 30%;
+}
+
+.hide{
+  direction: vertical;
+  width: 100%;
+  height: 70%;
+}
+.txt{
+  margin-top: 5px;
+  margin-bottom:8px;
+  font-weight: normal;
+  font-size: 34rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration-line: underline;
+}
+
+.nameDisplay{
+  margin-top: 5px;
+  margin-left:10px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.highlight{
+  margin-top: 5px;
+  margin-left:10px;
+  color: #2fa6f5;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.b1{
+  background: white;
+
+  /* align-items: center; */
+  width: 60%;
+  /* margin-top:5%; */
+  margin-bottom: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 2px double gainsboro;
+  border-top: none;
+  border-bottom: none;
+  /* border-radius: 20rpx; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.con{
+  margin-top:5%;
+}

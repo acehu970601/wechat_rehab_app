@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/extra_talk/Extra_talk",
+    "pages/extra_card/extra_card",
+    "pages/logs/logs",
+    "pages/selectPart/selectPart",
+    "pages/preparation/preparation",
+    "pages/chooseMode/chooseMode",
+    "pages/personal/personal",
+    "pages/QA/QA",
+    "pages/intro/intro",
+    "pages/custom/custom"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2fa6f5",
+    "navigationBarTitleText": "关节康复训练",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#2fa6f5",
+    "color": "#000000",
+    "selectedColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "pages/image/home.png",
+        "iconPath": "pages/image/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/image/acc.png",
+        "iconPath": "pages/image/acc.png",
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

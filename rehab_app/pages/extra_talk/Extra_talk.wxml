@@ -1,0 +1,21 @@
+<view class="container2">
+  <text class='txt'>填写问卷获得免费体验卡</text>
+</view>
+<view class="containers">
+  <text class='stxt'>1. 性别:</text>
+  <button bindtap="sex1" class="{{current_tag ==0?'buttons':'buttons2'}}">女</button>
+  <button bindtap="sex2" class="{{current_tag1 ==0?'buttons':'buttons2'}}">男</button>
+</view>
+<view class="containers">
+  <text class='stxt' >2. 年龄:</text>
+  <button bindtap="age1" class="{{current_tag2 ==0?'buttons':'buttons2'}}">小于40岁</button>
+  <button bindtap="age2" class="{{current_tag3 ==0?'buttons':'buttons2'}}">40-50岁</button>
+  <button bindtap="age3" class="{{current_tag4 ==0?'buttons':'buttons2'}}">大于50岁</button>
+</view>
+<view class="containers">
+  <text class='stxt'>3. 之前接受过专业治疗吗？</text>
+  <button bindtap="therapy1" class="{{current_tag5 ==0?'buttons':'buttons2'}}">是</button>
+  <button bindtap="therapy2" class="{{current_tag6 ==0?'buttons':'buttons2'}}">否</button>
+</view>
+
+<button class="buttonk" bindtap='jumpPage'>免费获得体验卡</button>

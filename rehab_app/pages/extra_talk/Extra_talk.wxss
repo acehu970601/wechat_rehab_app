@@ -1,0 +1,94 @@
+
+.videoCss{
+  width: 100%;
+  /* height: 30%; */
+}
+
+.buttonk{
+  position:fixed;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color:#2fa6f5;
+  color: white;
+  border-radius: 0;
+}
+
+.erweima{
+  display: flex;
+  /* align-items: center; */
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%
+}
+
+.erweima image{
+  width:10%;
+  /* height:30rpx; */
+}
+
+.contianer2{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 80rpx 0;
+  box-sizing: border-box;
+}
+
+.txt{
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contianers{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.stxt{
+  margin-top:30px;
+  margin-bottom:5px;
+  color: black;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons{
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:2px;
+}
+.buttons::after{
+  border:0;
+}
+.buttons2{
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:3px;
+  background-color:gainsboro;
+}
+buttons2{
+  border:0;
+}
+

@@ -1,0 +1,15 @@
+
+<view class="userinfo">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+      <view class='credit'>总积分： {{credit}}</view>
+</view>
+
+<view class="userinfo">
+<text>距离开启下一课程：{{next_class_credit-credit}}/{{next_class_credit}}</text>
+<progress class="prog" percent="{{credit/next_class_credit*100}}" stroke-width="10" color="#2fa6f5" />
+<text class="txt">温馨提示： 连续打卡7天可以获得额外6点积分哦！</text>
+</view>
+  <button open-type="share" class="buttons">推荐给好友</button>
+  <button open-type="feedback" class="buttons">意见反馈</button>
+<!-- <text></text> -->

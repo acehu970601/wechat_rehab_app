@@ -1,0 +1,31 @@
+<!--pages/custom/custom.wxml-->
+<scroll-view scroll-y='{{true}}' style="height: 1000rpx;">
+  <view class="scrollView">
+  <block class='previewBlock' wx:for="{{informationList}}" wx:for-index="idx">
+    <view class='previewSmallBlock'>
+      <button class='previewButton' bindtap='addVideo' data-text="{{item.engName}}" data-id="{{item.chineseName}}" data-index='{{idx}}'>
+      <image class='previewImage'  mode='widthFix' src="{{item.src}}"></image>
+      {{item.chineseName}}
+      <image class='previewImage1' src="../image/plus.png" mode='widthFix' ></image>
+      </button>
+    </view>
+  </block>
+  </view>
+</scroll-view>
+
+<view class="commodityScreen" bindtap="hideModal" wx:if="{{showModalStatus}}">
+</view>
+<scroll-view scroll-y="{{true}}" animation="{{animationData}}" class="commodityAttr" wx:if="{{showModalStatus}}">
+<!-- <text>今日训练列表</text> -->
+  <block wx:for="{{playListName}}" wx:for-index="idx">
+    <view style='display:flex;direction:column;'>
+    <view class='b1'>{{item}}</view>
+    <button class='btn' bindtap='removeVideo' id="idx">-</button>
+    </view>
+  </block>
+</scroll-view>
+
+<view class="finalMenu">
+  <button class='buttonl' bindtap='showModal'>已选预览</button>
+  <button class='buttonk' bindtap='jumpPageCustom'>开始</button>
+</view>

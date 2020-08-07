@@ -1,0 +1,18 @@
+<!--pages/preparation/preparation.wxml-->
+<!-- <text>{{srcName}}</text> -->
+<video id='trainVideo' class="{{fullScreen?'hide':'videoCss'}}" src='{{srcName}}' controls='{{false}}' autoplay="{{true}}" custom-cache="{{false}}" bindtap="changeFullScreen" bindended='bindEnded'></video>
+
+<button  bindtap="VideoPlayStop" class="btn">
+  <image class="img" src="../image/play_pause.png"></image>
+</button>
+
+  <view class='con'>
+  <view class='txt'><text>今日训练列表</text></view>
+  <view class='b1'>
+    <view wx:for="{{playListName}}">
+    <!-- <view class='txt'>{{index+1}}{{item}}</view> -->
+    <view class='highlight' wx:if="{{item==highlight}}">{{index+1}} {{highlight}}</view>
+     <view class='nameDisplay' wx:else>{{index+1}} {{item}}</view>
+    </view>
+  </view>
+  </view>

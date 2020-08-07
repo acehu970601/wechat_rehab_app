@@ -1,0 +1,11 @@
+<!--pages/selectPart/selectPart.wxml-->
+ <!-- <view class="userjieshao">
+     <text class="userjieshao">{{jieshao}}</text>
+ </view> -->
+ <view wx:for="{{partList}}" class="userjieshao">
+  <button id="{{item.name}}" class="buttonBlock" bindtap="jumpPage">
+  <image class="img" src="../image/{{item.name}}.png"></image>
+  <view class="txt2"><text>进度：{{workDay%item.sum_day}}/{{item.sum_day}}</text></view>
+  <view class="txt1">{{item.Chinese}}</view>
+  </button>
+ </view>

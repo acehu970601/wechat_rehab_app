@@ -1,0 +1,53 @@
+<!--intro.wxml-->
+<image class='image' mode='widthFix' src='../image/cap1.png'></image>
+
+<view class="button">
+  <button class="buttonk" bindtap='jumpPageDefault'>开始！</button>
+  <button class="buttond" bindtap='jumpPageCustom'>自定义课程</button>
+</view>
+
+<!--这个位置我想做个横向的scroll view用来展示12组不同的动作图片和名称-->
+
+<view class='out'>
+  <scroll-view scroll-x scroll-into-view='item2'>
+    <view id='item1' class='item'>
+      <image class='img' src='http://pww7j3brn.bkt.clouddn.com/pic1.JPG'></image>
+      <text class='item_txt'> 第一天：放松拉伸</text>
+    </view>
+    <view id='item2' class='item'>
+      <image class='img' src='http://pww7j3brn.bkt.clouddn.com/pic2.JPG'></image>
+      <text class='item_txt'> 第二天：拉伸舒展</text>
+    </view>
+    <view class='item'>
+      <image class='img' src='http://pww7j3brn.bkt.clouddn.com/pic3.JPG'></image>
+      <text class='item_txt'> 第三天：舒展运动</text>
+    </view>
+    <view class='item'>
+      <image class='img' src='http://pww7j3brn.bkt.clouddn.com/pic4.JPG'></image>
+      <text class='item_txt'> 第四天：活动筋骨</text>
+    </view>
+    <view class='item'>
+      <image class='img' src='http://pww7j3brn.bkt.clouddn.com/pic5.JPG'></image>
+      <text class='item_txt'> 第五天：激活肌肉</text>
+    </view>
+    <view class='item'>
+      <image class='img' src='http://pww7j3brn.bkt.clouddn.com/pic6.JPG'></image>
+      <text class='item_txt'> 第六天：肩部运动</text>
+    </view>
+    <view class='item'>
+      <image class='img' src='http://pww7j3brn.bkt.clouddn.com/pic7.jpg'></image>
+      <text class='item_txt'> 第七天：加强运动</text>
+    </view>
+  </scroll-view>
+</view>
+
+<text class='txt1'>该套训练是由专业医生以及患者共同总结出来的<text class='txt2'>12个经典训练动作</text>组成</text>
+<view class='a'>
+<text class='a1'>适合人群</text>
+<text class='a2'>1. 有肩周炎的患者</text>
+<text class='a2'>2. 长期有紧追疼痛的人群</text>
+<text class='a2'>3. 缺乏训练的上班族\n\n</text>
+<text class='a1'>*注意事项*</text>
+<text class='a2'>*请根据自身情况选择课程，调整\n节奏，并咨询医生，切勿过度训练</text>
+<text class='a2'>*局部酸疼属于正常情况，适当的\n按摩以及拉伸能够有效地缓解酸痛</text>
+</view>
